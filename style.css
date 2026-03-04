@@ -1,0 +1,93 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Glass Panel Styles */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dark .glass-panel {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Text Gradient */
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #3b82f6, #8b5cf6, #d946ef);
+}
+
+.dark .text-gradient {
+    background-image: linear-gradient(to right, #60a5fa, #a78bfa, #c084fc);
+}
+
+/* Button Glow effect */
+.btn-glow {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.4);
+    transform: translateY(-2px);
+}
+
+.dark .btn-glow {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+.dark .btn-glow:hover {
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
+}
+
+/* Gradient blob styles */
+.gradient-blob {
+    transition: background-color 0.5s ease;
+}
+
+.gradient-blob.blob-1 {
+    background-color: rgba(59, 130, 246, 0.15); /* Light blue tint */
+}
+.dark .gradient-blob.blob-1 {
+    background-color: rgba(30, 58, 138, 0.2);   /* Dark blue tint */
+}
+
+.gradient-blob.blob-2 {
+    background-color: rgba(139, 92, 246, 0.15); /* Light purple tint */
+}
+.dark .gradient-blob.blob-2 {
+    background-color: rgba(76, 29, 149, 0.2);   /* Dark purple tint */
+}
+
+.gradient-blob.blob-3 {
+    background-color: rgba(99, 102, 241, 0.1);  /* Light indigo tint */
+}
+.dark .gradient-blob.blob-3 {
+    background-color: rgba(99, 102, 241, 0.1);  /* Dark indigo tint */
+}
+
+/* Navbar Scrolled States */
+.nav-scrolled-light {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-scrolled-dark {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    background-color: rgba(5, 11, 20, 0.9);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
